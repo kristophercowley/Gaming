@@ -1,0 +1,38 @@
+<html ng-app="game-app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Game</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body ng-controller="Game-Controller as gc">
+    {{2+2}} {{gc.test}}
+    <div class="container" ng-keyUp="gc.moveByKey($event)">
+        <h1>The Game</h1>
+        <div class="row">
+            <div class="col-sm-12"><span id="foot"><img src="images/footdark.png" alt="Bigfoot"></span></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"><button class="btn btn-primary btn-block">jump</button></div>
+            <div class="col-md-4"><button class="btn btn-primary btn-block">hit</button></div>
+            <div class="col-md-4"><button class="btn btn-primary btn-block">smash</button></div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/components/controllers.js"></script>
+    <script src="app/components/services.js"></script>
+    <script src=""></script>
+
+</body>
+
+</html>

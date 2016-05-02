@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+}
+body{
+    background-image: url('../images/idaho.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#foot{
+    min-height: 800px;
+    /*float:right;*/
+}
