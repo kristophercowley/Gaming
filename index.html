@@ -11,18 +11,18 @@
 
 </head>
 
-<body ng-controller="Game-Controller as gc">
+<body ng-controller="Game-Controller as gc" >
     {{2+2}} {{gc.test}}
-    <div class="container" ng-keyUp="gc.moveByKey($event)">
+    <div id="contain" class="container" ng-keyUp="gc.moveByKey($event)" tabindex="0">
         <h1>The Game</h1>
-        <div class="row">
-            <div class="col-sm-12"><span id="foot"><img src="images/footdark.png" alt="Bigfoot"></span></div>
+        <div  class="row" style="height:80%">
+            <div class="col-sm-12"><span id="foot"></span></div>
         </div>
-        <div class="row">
-            <div class="col-md-4"><button class="btn btn-primary btn-block">jump</button></div>
+        <!--<div class="row">
+            <div class="col-md-4"><button ng-click="gc.jump()" class="btn btn-primary btn-block">jump</button></div>
             <div class="col-md-4"><button class="btn btn-primary btn-block">hit</button></div>
             <div class="col-md-4"><button class="btn btn-primary btn-block">smash</button></div>
-        </div>
+        </div>-->
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>

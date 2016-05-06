@@ -1,3 +1,4 @@
+
 h1{
     text-align: center;
 }
@@ -6,7 +7,17 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+#contain{
+        position: relative;
+
+}
 #foot{
-    min-height: 800px;
-    /*float:right;*/
+    height: 80px;
+    position:absolute;
+    top:200;
+    left:400;
+    
+}
+img{
+    height:80px;
 }
