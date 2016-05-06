@@ -13,10 +13,10 @@
 
 <body ng-controller="Game-Controller as gc" >
     {{2+2}} {{gc.test}}
-    <div id="contain" class="container" ng-keyUp="gc.moveByKey($event)" tabindex="0">
+    <div id="game-area" class="container" ng-keyUp="gc.moveByKey($event)" tabindex="0">
         <h1>The Game</h1>
         <div  class="row" style="height:80%">
-            <div class="col-sm-12"><span id="foot"></span></div>
+            <div class="col-sm-12"><span id="foot" style="top:{{gc.player.position.top}}; left:{{gc.player.position.left}}"></span></div>
         </div>
         <!--<div class="row">
             <div class="col-md-4"><button ng-click="gc.jump()" class="btn btn-primary btn-block">jump</button></div>
